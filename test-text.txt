@@ -1,1 +1,19 @@
-duy anh đẹp trai vl
+I. Tạo project trên GitHub:
+	1. Tạo 1 GitHub repository (folder) - nơi chứa code
+	2. Clone project này ( git clone Link-your-repo)
+	3. Viết code 
+	    git status (kiểm tra trạng thái files)
+	    git add . (thêm files)
+	    git commit -m "tên-muon-để" (tạo nội dung commit)
+	    git push origin main
+II. Tạo project local và đẩy lên GitHub:
+	1. Tạo 1 GitHub repo
+	2. git inin (tạo 1 file .git rỗng)
+	3. Viết code 
+           git status 
+	   git add . 
+	   git commit -m "tên-muon-để" 
+	   git remote add origin https://.......
+	   git push origin master
+
+ 
