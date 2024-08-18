@@ -1,4 +1,8 @@
-git checkout -b + "ten muon dat"
+ I- Git Merge:
+git pull: kéo code về
+git checkout -b + "tên muốn đặt" : tạo một cái nhánh code
 git branch : kiểm tra cái nhánh
-
 git checkout + "tên nhánh": nó sẽ truy cập vào nhánh bạn muốn
+
+ II- Git Conflict:
+vào file bị conflict và xóa những thứ ko cần thiết, giữ những nội dung cần thiết.
