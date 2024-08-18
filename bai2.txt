@@ -1,0 +1,4 @@
+git checkout -b + "ten muon dat"
+git branch : kiểm tra cái nhánh
+
+git checkout + "tên nhánh": nó sẽ truy cập vào nhánh bạn muốn
