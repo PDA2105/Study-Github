@@ -1,1 +1,31 @@
-duy anh đẹp trai vl, ko biet code 
+2. GIẢI MÃ CÁC KHÁI NIỆM GIT CHUYÊN SÂU ĐÃ HỌC
+-------------------------------------------------------------------------
+• .gitignore: 
+  Tập tin cấu hình chứa các quy tắc để Git tự động bỏ qua (không theo dõi) 
+  các tệp tin rác, thư mục biên dịch tạm thời (bin/, obj/, node_modules/) 
+  hoặc các thông tin cấu hình bảo mật chứa mật khẩu (.env).
+
+• .gitkeep: 
+  Một file "bù nhìn" (quy ước cộng đồng) đặt vào các thư mục trống để ép Git 
+  phải theo dõi và đẩy thư mục đó lên GitHub (vì mặc định Git chỉ quản lý 
+  File, không quản lý Folder trống).
+
+• Lệnh "git push -u" (git push --set-upstream):
+  Dùng ở lần đẩy code đầu tiên để thiết lập mối quan hệ "kết hôn" giữa nhánh 
+  local và nhánh trên GitHub. Các lần sau chỉ cần gõ "git push" ngắn gọn.
+
+• Hậu tố "--allow-unrelated-histories":
+  Quyền "thượng phương bảo kiếm" ép Git phải gộp hai lịch sử mã nguồn độc lập 
+  không chung tổ tiên (ví dụ: gộp code tạo local với file README tạo tự động 
+  trên web GitHub) mà không bị hệ thống từ chối.
+
+• Lệnh "git push --force" (-f):
+  Lệnh cưỡng chế, xóa sạch lịch sử trên GitHub để đè code local lên. Cực kỳ 
+  NGUY HIỂM trong làm việc nhóm vì có thể làm bốc hơi code của đồng đội. 
+  Tuyệt đối không dùng trên các nhánh chung (main, develop).
+
+• Cơ chế "git pull --rebase":
+  Giải pháp AN TOÀN NHẤT khi làm việc nhóm. Khi bạn và đồng đội cùng commit, 
+  lệnh này sẽ tạm nhấc commit của bạn ra, nối tiếp code của đồng đội vào 
+  trước, rồi mới đặt commit của bạn lên trên cùng. Giúp lịch sử Git thẳng tắp, 
+  sạch sẽ và hạn chế tối đa xung đột (Conflict).
